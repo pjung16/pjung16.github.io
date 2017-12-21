@@ -1,0 +1,73 @@
+html {
+	font-family: "Source Code Pro", "Monaco", monospace;
+	background-color: rgb(39,40,34);
+	color: rgb(243,239,229);
+}
+
+ul,li {
+	margin: 10px;
+}
+
+.info {
+	width: 590px;
+	height: auto;
+	margin: auto;
+	font-size: 14px;
+}
+
+h1 {
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 30px;
+	margin-bottom: 7vh;
+}
+
+h2 {
+	color: rgb(241, 38, 114);
+}
+
+.title {
+	height: 60vh;
+	margin-top: 37vh;
+}
+
+.intro {
+	margin: 0 auto;
+	text-align: center;
+	width: 80vw;
+}
+
+.bulletPoint {
+	color: rgb(102,217,239);
+}
+
+.subBullet {
+	color: rgb(222,219,116);
+}
+
+a {
+	color: rgb(161,226,46);
+}
+
+::selection{
+	background-color: rgba(225,225,225,0.2);
+}
+
+.lineNumber {
+	color: rgb(144,143,138);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li:before {
+  content: "_";
+  padding-right: 5px;
+}
