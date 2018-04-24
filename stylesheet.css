@@ -56,7 +56,11 @@ td:hover {
 	text-align: center;
 }
 
-@media screen and (max-width: 655px) {
+@-ms-viewport{
+  width: device-width;
+}
+
+@media screen and (max-width: 655px) and (min-width: 451px){
 	#name {
 		font-size: 16vw;
 	}
@@ -93,6 +97,30 @@ td:hover {
 	#logo {
 		padding: 10vh;
 		width: 14vw;
+	}
+
+	a {
+		font-size: 5vw;
+	}
+
+	td {
+		padding: 15px 25px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#name {
+		font-size: 10vh;
+	}
+
+	.description {
+		font-size: 6vh;
+		margin-bottom: -2.6vh;
+	}
+
+	#logo {
+		padding: 19vh;
+		width: 16vh;
 	}
 
 	a {
