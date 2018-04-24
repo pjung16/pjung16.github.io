@@ -1,73 +1,105 @@
 html {
-	font-family: "Source Code Pro", "Monaco", monospace;
-	background-color: rgb(39,40,34);
-	color: rgb(243,239,229);
+	font-family: "Verdana", "Helvetica", monospace;
+	background-color: #3B3C36; /*#556B2F*/ 
 }
 
-ul,li {
-	margin: 10px;
+#container {
+	position: relative;
+	height: 97vh;
+	width: 97vw;
 }
 
-.info {
-	width: 590px;
-	height: auto;
-	margin: auto;
-	font-size: 14px;
+#name {
+	color: white;
+	font-size: 18vh;
 }
 
-h1 {
-	height: 30px;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 30px;
-	margin-bottom: 7vh;
+.description {
+	color: #C3C3C3;
+	font-size: 9vh;
+	margin-bottom: -4.1vh;
 }
 
-h2 {
-	color: rgb(241, 38, 114);
+#strikethrough {
+	text-decoration: line-through;
 }
 
-.title {
-	height: 60vh;
-	margin-top: 37vh;
-}
-
-.intro {
-	margin: 0 auto;
-	text-align: center;
-	width: 80vw;
-}
-
-.bulletPoint {
-	color: rgb(102,217,239);
-}
-
-.subBullet {
-	color: rgb(222,219,116);
+#linksection {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 a {
-	color: rgb(161,226,46);
+	font-size: 8vh;
+	text-decoration: none;
+	color: white;
 }
 
-::selection{
-	background-color: rgba(225,225,225,0.2);
+td {
+	padding: 15px 40px;
 }
 
-.lineNumber {
-	color: rgb(144,143,138);
+td:hover {
+	opacity: 0.7;
 }
 
-ul {
-  list-style: none;
+#logo {
+	width: 20vh;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
 }
 
-li {
-  padding-left: 1em;
-  text-indent: -1em;
+.imagecontainer {
+	text-align: center;
 }
 
-li:before {
-  content: "_";
-  padding-right: 5px;
+@media screen and (max-width: 655px) {
+	#name {
+		font-size: 16vw;
+	}
+
+	.description {
+		font-size: 10vw;
+		margin-bottom: -4.7vw;
+	}
+
+	#logo {
+		padding: 21vh;
+		width: 20vw;
+	}
+
+	a {
+		font-size: 5vw;
+	}
+
+	td {
+		padding: 15px 25px;
+	}
+}
+
+@media screen and (max-width: 945px) and (min-width: 656px) {
+	#name {
+		font-size: 12vw;
+	}
+
+	.description {
+		font-size: 7vw;
+		margin-bottom: -3.2vw;
+	}
+
+	#logo {
+		padding: 10vh;
+		width: 14vw;
+	}
+
+	a {
+		font-size: 5vw;
+	}
+
+	td {
+		padding: 15px 25px;
+	}
 }
