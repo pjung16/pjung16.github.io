@@ -1,0 +1,34 @@
+.projectSquare {
+    font-family: 'Roboto Slab';
+    width: calc(20vw + 70px);
+    height: 203px;
+    background: #2D81FF;
+    border-radius: 23px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.7vw + 20px);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.projectSquare:hover {
+    background: #0031CB;
+}
+
+@media only screen and (max-width: 1075px) {
+    .projectSquare {
+        width: calc(15vw + 250px);
+        margin: 15px;
+    }
+}
+
+.description {
+    width: 80%;
+    font-size: 20px;
+}
