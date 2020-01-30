@@ -13,10 +13,10 @@ class App extends Component {
 
       },
       projectDescriptions: [
+        "A data-driven web app that analyzes top League of Legends players to find ideal pairs and team compositions",
         "A system for privately sharing content items among groups of people. Created using HTML, CSS/Bootstrap, and Flask in my Databases class.",
-        "Web app that uses REST APIs and scrapes sneaker reseller websites for the prices of a shoe that a user inputs",
-        "A website created for a side project done with my friends that makes videos for individuals to tell stories",
-        "My personal website created using React.js and Gatsby.js"
+        "Open-source web app for agent-based modeling created using ReactJS",
+        "A web app for NBA statistics using GraphQL and ExpressJS for the backend and ReactJS for the frontend"
       ]
     };
 
@@ -127,10 +127,10 @@ class App extends Component {
           <div className="projectsTitle">Projects</div>
           <div className="projects">
             <div className="projectsGrid">
-              <Project projectName="PriCoSha" link="https://github.com/pjung16/PriCoSha" desc={this.state.projectDescriptions[0]} />
-              <Project projectName="Heatcheck" link="https://github.com/pjung16/heatcheck" desc={this.state.projectDescriptions[1]} />
-              <Project projectName="Wonvision" link="https://github.com/pjung16/wonvision" desc={this.state.projectDescriptions[2]} />
-              <Project projectName="This Website" link="https://github.com/pjung16/pjung16.github.io" desc={this.state.projectDescriptions[3]} />
+              <Project projectName="LeagueOfData" link="https://pjung16.github.io/LeagueOfData/" desc={this.state.projectDescriptions[0]} />
+              <Project projectName="PriCoSha" link="https://github.com/pjung16/PriCoSha" desc={this.state.projectDescriptions[1]} />
+              <Project projectName="Indra" link="https://gcallah.github.io/indras_net/webapp.html#/" desc={this.state.projectDescriptions[2]} />
+              <Project projectName="NBA GraphQL" link="https://github.com/pjung16/nbaGraphQL" desc={this.state.projectDescriptions[3]} />
             </div>
           </div>
         </div>
