@@ -531,3 +531,20 @@
         height: 5rem;
     }
 }
+
+@media screen and (max-width: 705px) {
+    .gradientContent {
+        width: 80%;
+    }
+    .gradientBlock {
+        height: 28rem;
+    }
+}
+
+a:focus {
+    outline:0;
+}
+
+button:focus {
+    outline:0;
+}

@@ -9,14 +9,33 @@ class App extends Component {
 
     this.state = {
       isNightMode: false,
-      projects: {
-
-      },
       projectDescriptions: [
         "A data-driven web app that analyzes top League of Legends players to find ideal pairs and team compositions",
-        "A system for privately sharing content items among groups of people. Created using HTML, CSS/Bootstrap, and Flask in my Databases class.",
+        "A productivity app that syncs with your Google Calendar to create small tasks for the week and complete them",
         "Open-source web app for agent-based modeling created using ReactJS",
         "A web app for NBA statistics using GraphQL and ExpressJS for the backend and ReactJS for the frontend"
+      ],
+      projectInfo: [
+        {
+          name: "LeagueOfData",
+          link: "https://pjung16.github.io/LeagueOfData/",
+          desc: "A data-driven web app that analyzes top League of Legends players to find ideal pairs and team compositions"
+        },
+        {
+          name: "Nibble",
+          link: "https://nibble-productivity.herokuapp.com/",
+          desc: "A productivity app that syncs with your Google Calendar for completing small tasks based on your schedule"
+        },
+        {
+          name: "NBA GraphQL",
+          link: "http://nba-graphql.herokuapp.com/",
+          desc: "A web app for NBA statistics using GraphQL, ExpressJS for the backend and ReactJS, Redux, Apollo for the frontend"
+        },
+        {
+          name: "Indra",
+          link: "https://gcallah.github.io/indras_net/webapp.html#/",
+          desc: "Open-source web app for agent-based modeling created using ReactJS"
+        },
       ]
     };
 
@@ -127,10 +146,9 @@ class App extends Component {
           <div className="projectsTitle">Projects</div>
           <div className="projects">
             <div className="projectsGrid">
-              <Project projectName="LeagueOfData" link="https://pjung16.github.io/LeagueOfData/" desc={this.state.projectDescriptions[0]} />
-              <Project projectName="PriCoSha" link="https://github.com/pjung16/PriCoSha" desc={this.state.projectDescriptions[1]} />
-              <Project projectName="Indra" link="https://gcallah.github.io/indras_net/webapp.html#/" desc={this.state.projectDescriptions[2]} />
-              <Project projectName="NBA GraphQL" link="https://github.com/pjung16/nbaGraphQL" desc={this.state.projectDescriptions[3]} />
+              {this.state.projectInfo.map((cur) => {
+                return <Project projectName={cur.name} link={cur.link} desc={cur.desc} />
+              })}
             </div>
           </div>
         </div>
